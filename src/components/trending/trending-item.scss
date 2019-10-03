@@ -1,0 +1,22 @@
+.trending {
+    display: flex;
+    flex-direction: row;
+
+    .trending-title {
+        font-weight: bold;
+    }
+
+    .trending-item {
+        margin: auto;
+
+        .t-i-img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .t-i-info {
+            margin: auto;
+        }
+
+    }
+}
