@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: auto;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  background-color: #0074d8;
+  padding: 10px;
+  justify-content: space-between;
+  align-content: center;
+
+  .cart-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+  .header-links {
+    margin: 10px 10px;
+
+    .link {
+      text-decoration: none;
+      color: white;
+      margin: 10px 10px;
+      cursor: pointer;
+      border: solid 1px black;
+      background: gray;
+      border-radius: 30px;
+      width: 100px;
+      padding: 4px 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      align-items: center;
+
+      transition: {
+        property: color, background;
+        duration: 0.5s;
+        timing-function: ease-out;
+      }
+
+      &:hover {
+        color: black;
+        background: white;
+        font-weight: bold;
+      }
+
+      &:focus {
+        color: purple;
+      }
+    }
+  }
+}
