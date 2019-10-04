@@ -5,7 +5,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 10,
     category: "action",
-    isTrending: false
+    isTrending: false,
+    onSale: false
   },
   {
     id: 11,
@@ -13,7 +14,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 20,
     category: "action",
-    isTrending: false
+    isTrending: false,
+    onSale: false
   },
   {
     id: 12,
@@ -21,7 +23,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 15,
     category: "action",
-    isTrending: false
+    isTrending: false,
+    onSale: false
   },
   {
     id: 13,
@@ -29,7 +32,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 18,
     category: "history",
-    isTrending: true
+    isTrending: true,
+    onSale: true
   },
   {
     id: 14,
@@ -37,7 +41,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 10,
     category: "action",
-    isTrending: false
+    isTrending: false,
+    onSale: false
   },
   {
     id: 15,
@@ -45,7 +50,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 20,
     category: "romance",
-    isTrending: false
+    isTrending: false,
+    onSale: false
   },
   {
     id: 16,
@@ -53,7 +59,8 @@ const BOOKS_DATA = [
     info: "something",
     price: 15,
     category: "action",
-    isTrending: true
+    isTrending: true,
+    onSale: false
   }
 ];
 export default BOOKS_DATA;
