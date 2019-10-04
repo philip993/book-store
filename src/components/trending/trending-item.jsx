@@ -7,8 +7,8 @@ const TrendingItems = ({ isTrending }) => (
     <h3 className="trending-title">TRENDING BOOKS NOW:</h3>
     {BOOKS_DATA.filter(b => b.isTrending === true)
       .filter((item, ind) => ind < 3)
-      .map(({ id, title }) => (
-        <Book key={id} title={title} />
+      .map(({ id, ...otherProps }) => (
+        <Book key={id} {...otherProps} />
       ))}
   </div>
 );
