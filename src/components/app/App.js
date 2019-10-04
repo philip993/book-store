@@ -7,6 +7,8 @@ import Footer from "../footer/footer";
 
 import "./App.css";
 import Shop from "../../pages/shop/shop";
+import Action from "../../pages/action/action";
+import History from "../../pages/history/history";
 
 class App extends React.Component {
   render() {
@@ -16,6 +18,8 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Homepage}></Route>
           <Route exact path="/shop" component={Shop}></Route>
+          <Route exact path="/shop/action" component={Action}></Route>
+          <Route exact path="/shop/history" component={History}></Route>
         </Switch>
         <Footer />
       </div>
