@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./book.scss";
+
 const Book = ({ category, title, info }) => (
   <div className="book">
-    <h3>{title}</h3>
-    <p>{category}</p>
-    <span>{info}</span>
+    <h3 className="book-title">{title}</h3>
+    <span className="book-info">{info}</span>
+    <p className="book-category">{category}</p>
   </div>
 );
 
