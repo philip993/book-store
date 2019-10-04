@@ -1,0 +1,39 @@
+.category-item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(255, 163, 77);
+    margin: 10px 10px;
+
+
+    .c-title {
+        color: darkslategray;
+        font-size: 24px;
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .c-info {
+        color: gray;
+        font-size: 14px;
+        font-style: italic;
+        margin: 10px;
+        padding: 0 5px;
+    }
+
+    .c-button {
+        width: 150px;
+        height: 50px;
+        justify-content: center;
+        background-color: darkolivegreen;
+        margin: auto;
+
+        p {
+            color: black;
+            font-weight: bold;
+            align-content: center;
+        }
+    }
+}
