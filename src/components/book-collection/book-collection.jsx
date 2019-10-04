@@ -3,8 +3,8 @@ import BOOKS_DATA from "../../assets/BOOKS_DATA";
 import Book from "../book/book";
 
 class BookCollection extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       sections: BOOKS_DATA
     };

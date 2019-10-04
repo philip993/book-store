@@ -1,17 +1,16 @@
 import React from "react";
+import BOOKS_DATA from "../../assets/BOOKS_DATA";
+import Book from "../book/book";
 
-class TrendingItems extends React.Component {
-  render() {
-    return (
-      <div className="trending">
-        <h3 className="trending-title">TRENDING BOOKS NOW:</h3>
-        <div className="trending-item">
-          <img src="#" alt="book" className="t-i-img" />
-          <span className="t-i-info">Book info</span>
-        </div>
-      </div>
-    );
-  }
-}
+const TrendingItems = ({ isTrending }) => (
+  <div className="trending">
+    <h3 className="trending-title">TRENDING BOOKS NOW:</h3>
+    {BOOKS_DATA.filter(b => b.isTrending === true)
+      .filter((item, ind) => ind < 3)
+      .map(({ id, title }) => (
+        <Book key={id} title={title} />
+      ))}
+  </div>
+);
 
 export default TrendingItems;
