@@ -2,15 +2,22 @@ import React from "react";
 import BOOKS_DATA from "../../assets/BOOKS_DATA";
 import Book from "../book/book";
 
-const TrendingItems = ({ isTrending }) => (
-  <div className="trending">
-    <h3 className="trending-title">TRENDING BOOKS NOW:</h3>
-    {BOOKS_DATA.filter(b => b.isTrending === true)
-      .filter((item, ind) => ind < 3)
-      .map(({ id, ...otherProps }) => (
-        <Book key={id} {...otherProps} />
-      ))}
-  </div>
-);
+const TrendingItems = () => {
+  const trendingBooks = BOOKS_DATA.filter(book => book.isTrending).map(
+    ({ id, ...otherProps }) => <Book key={id} {...otherProps} />
+  );
+
+  const getRandomBook = () => {
+    const index = Math.floor(Math.random() * trendingBooks.length);
+    return trendingBooks[index];
+  };
+
+  return (
+    <div className="trending">
+      <h2 className="trending-title">TRENDING BOOKS NOW:</h2>
+      {getRandomBook(trendingBooks)}
+    </div>
+  );
+};
 
 export default TrendingItems;
