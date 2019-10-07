@@ -1,11 +1,14 @@
 .category-table {
+    width: 60%;
     display: flex;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 25px;
 
     .c-t-items {
-
-        width: 50%;
+        display: flex;
+        flex: 1 1 200px;
         padding: 20px;
+        margin: auto;
     }
 }

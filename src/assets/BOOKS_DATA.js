@@ -72,10 +72,10 @@ const BOOKS_DATA = [
     onSale: false
   },
   {
-    id: 17,
+    id: 18,
     title: "eight",
     info: "something",
-    price: 16,
+    price: 17,
     category: "mistery",
     isTrending: false,
     onSale: false

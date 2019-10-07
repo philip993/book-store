@@ -3,7 +3,8 @@
 
     .home-items {
         display: flex;
-        flex-direction: row;
-        margin: 0 20px;
+        flex-direction: column;
+        margin: 0 25px;
+        padding-top: 30px;
     }
 }
