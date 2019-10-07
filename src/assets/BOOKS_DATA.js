@@ -31,7 +31,7 @@ const BOOKS_DATA = [
     title: "Four",
     info: "something",
     price: 18,
-    category: "history",
+    category: "mistery",
     isTrending: true,
     onSale: true
   },
@@ -58,8 +58,26 @@ const BOOKS_DATA = [
     title: "seven",
     info: "something",
     price: 15,
-    category: "action",
+    category: "history",
     isTrending: true,
+    onSale: false
+  },
+  {
+    id: 17,
+    title: "eight",
+    info: "something",
+    price: 16,
+    category: "thriller",
+    isTrending: false,
+    onSale: false
+  },
+  {
+    id: 17,
+    title: "eight",
+    info: "something",
+    price: 16,
+    category: "mistery",
+    isTrending: false,
     onSale: false
   }
 ];
